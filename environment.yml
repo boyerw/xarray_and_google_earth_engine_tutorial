@@ -19,6 +19,7 @@ dependencies:
   - numpy
   - matplotlib
   - seaborn
+  - jupyter
   - pip:
     - python-dotenv
     - mkdocs
