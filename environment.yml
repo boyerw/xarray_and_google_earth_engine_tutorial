@@ -10,6 +10,15 @@ dependencies:
   - typer
   - loguru
   - tqdm
+  - cartopy
+  - dask
+  - earthengine-api
+  - google-auth
+  - xarray
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
   - pip:
     - python-dotenv
     - mkdocs
