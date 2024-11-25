@@ -14,7 +14,7 @@ PYTHON_INTERPRETER = python
 ## Install Python Dependencies
 .PHONY: requirements
 requirements:
-	micromamba env update --name $(PROJECT_NAME) --file environment.yml --prune
+	conda env update --name $(PROJECT_NAME) --f environment.yml --prune
 	
 
 
@@ -43,7 +43,7 @@ format:
 ## Set up python interpreter environment
 .PHONY: create_environment
 create_environment:
-	micromamba env create --name $(PROJECT_NAME) -f environment.yml
+	conda env create --name $(PROJECT_NAME) -f environment.yml
 	
 	@echo ">>> conda env created. Activate with:\nconda activate $(PROJECT_NAME)"
 	
